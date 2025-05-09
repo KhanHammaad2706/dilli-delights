@@ -3,22 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dilli Delights Menu</title>
+  <title>Dilli Delights</title>
   <style>
-    html, body {
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #d5f4ff;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
     }
-    img {
-      display: block;
-      width: 100vw;
-      height: 100vh;
-      object-fit: contain;
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #000000;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #030303;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1rem;
+      color: white;
+      background-color: #c0392b;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .brand-name {
+      color: #fd8200; /* Custom color for "Dilli Delights" */
+    }
+
+    .btn:hover {
+      background-color: #a93226;
     }
   </style>
 </head>
 <body>
-  <img src="menu.png" alt="Dilli Delights Menu" />
+  <div class="container">
+    <h1>Welcome to <span class="brand-name">Dilli-Delights</span></h1>
+    <p>At <span class="brand-name">Dilli-Delights</span>, we serve you delicious, authentic, and fresh food with love.</p>
+    <p>Step into a world of rich flavors and mouth-watering aromas, where every dish is crafted with passion and
+      tradition. Whether you're craving classic Indian street food or a comforting homemade meal, we bring you an
+      experience that warms the heart and delights the taste buds.</p>
+
+    <a class="btn" href="menu.png" target="_blank">View Menu</a>
+    <br>
+    <p>For large quantity orders, kindly review the section below.</p>
+    <a class="btn" href="https://docs.google.com/document/d/18yWkk6pKX-zSg7fvl9P05QEvO8ogdM6i7OkGu6HbMgM/edit?tab=t.0" target="_blank">
+      View
+    </a>
+  </div>
 </body>
 </html>
